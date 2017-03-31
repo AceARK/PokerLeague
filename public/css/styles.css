@@ -1,4 +1,17 @@
+body {
+    background-image: url('/css/images/pokerbg1.jpg');
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/*@font-face {
+    font-family: 'pokercards';
+    src: url('/css/pokercards.ttf');
+}*/
+
 .errorMessage {
+
 	padding-top: 60px;
 	border: 3px solid black;
 	border-radius: 7px;
@@ -7,7 +20,53 @@
 	height: 300px;
 }
 
+.btn {
+    border-top: 1px solid #fc9292;
+    background: #241414;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#241414));
+    background: -webkit-linear-gradient(top, #ff0000, #241414);
+    background: -moz-linear-gradient(top, #ff0000, #241414);
+    background: -ms-linear-gradient(top, #ff0000, #241414);
+    background: -o-linear-gradient(top, #ff0000, #241414);
+    padding: 9px 18px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    border-top-color: #ff0505;
+    background: #ff0505;
+    color: #ffffff;
+}
+
+.btn:active {
+    border-top-color: #ff0000;
+    background: #ff0000;
+}
+
+.btn.raised {
+    box-shadow: 0 3px 0 0 #ff0505;
+}
+
+.btn.raised:active,
+.btn-primary.raised.active {
+    background: #ff0505;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
 .non-editable {
-	border: none;
-	background-color: transparent;
+    border: none;
+    background-color: transparent;
 }
